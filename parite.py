@@ -6,16 +6,15 @@
 import os
 
 def launch_analysis(data_file):
+	with open(path_to_file, 'r') as f:
+	file:
 	pass
 
 
 def main():
 	print("Run")
-	
 	launch_analysis('current_mps.csv')
-	with open(path_to_file, 'r') as file:
-		file:
-			pass
+	
 		
 
 
