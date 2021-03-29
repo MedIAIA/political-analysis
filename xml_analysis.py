@@ -1,0 +1,5 @@
+import parite
+
+
+
+parite.main()

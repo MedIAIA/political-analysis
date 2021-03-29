@@ -1,0 +1,37 @@
+
+linux commands for creating the vertualenv
+
+1_ installation:
+pip install virtualenv
+
+2_ creation:
+virtualenv -p python3 env 
+
+3_activation :
+
+source env/bin/activate
+
+4_verification :
+which python 
+
+5_ verification des packges installées
+
+pip freeze
+
+6_ deactivate the env :
+
+deactivate
+
+rm -rf env    #remove the envi
+
+7_deactivate the details for git :  creating a file ".gitingnore" that contains  : env/
+
+
+8_ceation of a dependances file : requirements.txt : Shapely==1.7.1
+
+autamatic way : pip freeze > requirements.txt
+
+9_install of dependances file :
+
+pip insatall -r requirments.txt
+
