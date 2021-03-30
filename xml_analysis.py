@@ -1,5 +1,20 @@
-import parite
+import os
 
 
+def launch_analysis(data_file):
+	directory = os.path.dirname(__file__)
+	path_to_file = os.path.join(directory, "data", data_file)
+	
+	with open(path_to_file, 'r') as file:
+		preview = file.readline()
+	
+	print(" Yeah! We manged to read the file. here is a preview {}".format(preview))
 
-parite.main()
+
+def main():
+	print("Main is Run")
+	launch_analysis('SyceronBrut.xml')
+
+
+if __name__ == "__main__":
+	main()

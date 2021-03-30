@@ -1,26 +1,17 @@
-#! /usr/bin/env python3 
+#! /usr/bin/env python3
 #os find the interpreterpath 
 # coding: utf-8
 #for accents , unnecessary for python3
 
-import os
-
-def launch_analysis(data_file):
-	with open(path_to_file, 'r') as f:
-	file:
-	pass
+import csv_analysis as c_an
+import xml_analysis as x_an
 
 
 def main():
-	print("Run")
-	launch_analysis('current_mps.csv')
+	c_an.launch_analysis('current_maps.csv')
+	x_an.launch_analysis('SyceronBrut.xml')
+
+
+if __name__ == "__main":
+		main()
 	
-		
-
-
-
-if __name__ == "__main__":
-	
-	print("this script is a main program")
-else:
-	print("this script is a module")
