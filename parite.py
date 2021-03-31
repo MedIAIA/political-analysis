@@ -23,16 +23,16 @@ def main():
 	try:
 		datafile = args.datafile
 		
-		if datafile == None:
-			raise lg.warning('You must indicate a datafile')
+		if datafile == None: #the main codition
+			raise lg.error('You must indicate a datafile')
 		else:
-			try:
+			try: #if the datafile exist
 				if args.extension == 'csv':
 					c_an.launch_analysis(datafile)
 				elif args.extension == 'xml':
 					x_an.launch_analysis(datafile)
 			except FileNotFoundError as e:
-				lg.critical(':( File not find {} \n'.format(e))  # we must to use format(e) if we want to see error message.
+				lg.critical('\n:( File not find {} \n'.format(e))  # we must to use format(e) if we want to see error message.
 			finally:
 				lg.debug('########################### Analysis is over    #################################')
 	except Warning as e:
